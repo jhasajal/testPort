@@ -1,0 +1,195 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  header {
+    position: fixed;
+    top: 8%;
+    right: 3%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-end;    
+    nav{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 2.5vh;
+      a {
+        color: #79736c;
+        font-weight: 200;
+        position: relative;
+        transition: .3s ;
+      }
+      a:hover{
+        color: #afa18f;
+      }
+    }
+  }
+
+  .nav-active {
+    color: #afa18f;
+  }
+  
+  /* button {
+    font-size: calc(10px + 2vmin);
+  }
+
+  .button-hover:hover svg {
+    fill: #e85839; Change this to your desired hover color 
+  } */
+
+  /* a {
+      text-decoration: none;
+      color: #18272F;
+      font-weight: 700;
+    position: relative;
+  }
+  
+  a::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  
+  a:hover::before {
+    bottom: 0;
+    height: 100%;
+  } */
+  .flipbox {
+    perspective: 1000px;
+  }
+  
+  .flipbox:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .flip-box-back {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+  }
+  
+  .flipbox:hover .flip-box-inner .flip-box-front,
+  .flipbox:hover .flip-box-inner .flip-box-back {
+    transform: rotateX(0deg);
+  }
+
+  .floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(10px,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(10px, -0px); }    
+}
+
+.floating2 {  
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating2 {
+  from { transform: translate(0,  15px); }
+  65%  { transform: translate(10px, 20px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+
+.floatinge {  
+  animation-name: floating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floatinge {
+  from { transform: translate(5px, 0); }
+  25%  { transform: translate(0, 5px); }
+  55%  { transform: translate(-5px, 0); }
+  to   { transform: translate(0, -5px); }    
+}
+
+
+  
+  

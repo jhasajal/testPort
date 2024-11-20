@@ -1,0 +1,7 @@
+.mainlogo-hover:hover circle {
+    fill: #e85839; /* Change this to your desired hover color */
+  }
+  
+  .mainlogo-hover:hover path {
+    fill: #ffffff; /* Change this to your desired hover color */
+  }

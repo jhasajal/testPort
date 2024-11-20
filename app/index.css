@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'AvantB';
+  font-style: bold;
+  font-weight: normal;
+  src: url('/font/AVGARDD_2.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'AvantN';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/font/AVGARDN_2.woff') format('woff');
+}
+
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'AvantB', 'AvantN', monospace;
+}
+
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}
